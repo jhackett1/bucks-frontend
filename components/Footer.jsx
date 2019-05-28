@@ -1,6 +1,6 @@
 import React from 'react'
 
 export default () =>
-    <footer>
-        footer goes here
+    <footer className="container">
+        <p>© Buckinghamshire Council 2019</p>
     </footer>

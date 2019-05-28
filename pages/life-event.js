@@ -1,6 +1,7 @@
 import React from 'react'
 import fetch from 'isomorphic-unfetch'
 import { withRouter } from 'next/router'
+import Layout from '../components/Layout'
 
 export default class LifeEvent extends React.Component{
 
@@ -14,10 +15,10 @@ export default class LifeEvent extends React.Component{
 
     render(){
         return(
-            <>
+            <Layout>
                 <h1>{this.props.title}</h1>
                 <p>{this.props.intro}</p>
-            </>
+            </Layout>
         )
     }
 

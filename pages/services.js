@@ -1,4 +1,5 @@
 import React from 'react'
+import Layout from '../components/Layout'
 
 export default class extends React.Component{
 
@@ -10,7 +11,9 @@ export default class extends React.Component{
 
     render(){
         return(
-            <h1>Recommendations</h1>
+            <Layout>
+                <h1>Recommendations</h1>
+            </Layout>
         )
     }
 

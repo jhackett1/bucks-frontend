@@ -1,7 +1,7 @@
 import React from 'react'
 import fetch from 'isomorphic-unfetch'
 import Link from 'next/link'
-import Layout from '../components/_Layout'
+import Layout from '../components/Layout'
 
 export default class Index extends React.Component{
 
@@ -13,19 +13,18 @@ export default class Index extends React.Component{
 
     render(){
         return(
-            <>
-                <Layout>
-                    <h1>Home</h1>
-                    <ul>
-                        {this.props.items.map((item, i)=>
-                            <li key={i}>
-                                <Link href={`/life-event/${item.meta.slug}`}><a>{item.title}</a></Link>
-                            </li>
-                        )}
-                    </ul>
-                </Layout>
-
-            </>
+            <Layout>
+                <h1>Care and support for adults</h1>
+                <p>Understand the care and support options available in your community.</p>
+                
+                <ul>
+                    {this.props.items.map((item, i)=>
+                        <li key={i}>
+                            <Link href={`/life-event/${item.meta.slug}`}><a>{item.title}</a></Link>
+                        </li>
+                    )}
+                </ul>
+            </Layout>
         )
     }
 }
