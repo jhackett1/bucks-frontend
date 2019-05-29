@@ -1,0 +1,20 @@
+.hero{
+    overflow: hidden;
+}
+
+.hero__headline{
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero__slogan{
+    font-size: 1.3em;
+}
+
+.hero__image{
+    width: 100%;
+    margin-top: 50px;
+    transform: scale(1.4);
+    z-index: -1;
+    position: relative;
+}

@@ -1,7 +1,8 @@
 import React from 'react'
 import fetch from 'isomorphic-unfetch'
-import Link from 'next/link'
 import Layout from '../components/Layout'
+import Hero from '../components/Hero'
+import LifeEventsList from '../components/LifeEventsList'
 
 export default class Index extends React.Component{
 
@@ -14,16 +15,8 @@ export default class Index extends React.Component{
     render(){
         return(
             <Layout>
-                <h1>Care and support for adults</h1>
-                <p>Understand the care and support options available in your community.</p>
-                
-                <ul>
-                    {this.props.items.map((item, i)=>
-                        <li key={i}>
-                            <Link href={`/life-event/${item.meta.slug}`}><a>{item.title}</a></Link>
-                        </li>
-                    )}
-                </ul>
+                <Hero/>
+                <LifeEventsList items={this.props.items}/>
             </Layout>
         )
     }
