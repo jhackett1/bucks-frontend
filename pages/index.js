@@ -2,6 +2,7 @@ import React from 'react'
 import fetch from 'isomorphic-unfetch'
 import Layout from '../components/Layout'
 import Hero from '../components/Hero'
+import NeedsExplorer from '../components/NeedsExplorer'
 import LifeEventsList from '../components/LifeEventsList'
 
 export default class Index extends React.Component{
@@ -16,6 +17,9 @@ export default class Index extends React.Component{
         return(
             <Layout>
                 <Hero/>
+                <div class="container">
+                    <NeedsExplorer/>
+                </div>
                 <LifeEventsList items={this.props.items}/>
             </Layout>
         )

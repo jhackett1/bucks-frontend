@@ -2,11 +2,11 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withA11y } from '@storybook/addon-a11y';
 
-import Header from '../components/Header';
+import Checkbox from '../components/Checkbox';
 
-storiesOf('Header', module)
+storiesOf('Checkbox', module)
   .add('default', () => (
-    <Header />
+    <Checkbox label="Example option" name="example-name" value="1" />
   ), {
     // notes: 'A very simple example of addon notes',
   })

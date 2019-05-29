@@ -1,7 +1,7 @@
 .site-header{
     padding-top: 20px;
     padding-bottom: 20px;
-    @media screen and (min-width: 450px){
+    @media screen and (min-width: 500px){
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -11,13 +11,13 @@
 
 .site-header__actions{
     display: none;
-    @media screen and (min-width: 450px){
+    @media screen and (min-width: 500px){
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         justify-content: space-between;
     }
-    @media screen and (min-width: 700px){
+    @media screen and (min-width: 800px){
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -35,10 +35,11 @@
     text-decoration: none;
     margin-left: 35px;
     margin-top: 15px;
+    display: inline-block;
     &:hover{
         text-decoration: underline
     }
-    @media screen and (min-width: 700px){
+    @media screen and (min-width: 800px){
         margin-top: 0px;
     }
 }

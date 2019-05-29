@@ -2,11 +2,11 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withA11y } from '@storybook/addon-a11y';
 
-import Header from '../components/Header';
+import NeedsExplorer from '../components/NeedsExplorer';
 
-storiesOf('Header', module)
+storiesOf('Needs explorer', module)
   .add('default', () => (
-    <Header />
+    <NeedsExplorer />
   ), {
     // notes: 'A very simple example of addon notes',
   })

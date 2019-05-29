@@ -13,7 +13,7 @@ export default () =>
 
         <div className="site-header__actions">
             <SearchBar/>
-            <nav className="site-header__actions">
+            <nav className="site-header__navigation">
                 <Link href="/services">
                     <a className="site-header__nav-link">Explore services</a>
                 </Link>

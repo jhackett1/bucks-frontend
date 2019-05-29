@@ -1,0 +1,23 @@
+@import '../vars';
+
+.checkbox__label{
+    display: inline-block;
+    background: $blue5;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: $blue1;
+    line-height: 1em;
+    padding: 20px 25px;
+    border-radius: 100px;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+
+}
+
+.checkbox__input{
+    display: none;
+    &:checked + .checkbox__label{
+        color: white;
+        background: $blue1;
+    }
+}
