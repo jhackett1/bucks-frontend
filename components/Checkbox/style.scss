@@ -17,7 +17,7 @@
 .checkbox__input{
     display: none;
     &:checked + .checkbox__label{
-        color: white;
+        color: red;
         background: $blue1;
     }
 }
