@@ -1,6 +1,8 @@
 
 @import '../vars';
 
+$sidewaysPadding: 20px;
+
 *{
     margin: 0;
     padding: 0;
@@ -12,12 +14,16 @@
 .container{
     max-width: 1000px;
     margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: $sidewaysPadding;
+    padding-right: $sidewaysPadding;
 }
 
 .visually-hidden{
     position: absolute !important;
     top: -9999px !important;
     left: -9999px !important;
+}
+
+.section-title{
+    font-size: 1.7em;
 }

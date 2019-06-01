@@ -11,18 +11,11 @@ export default () =>
             <a><img className="site-header__logo" src={logo} alt="Buckinghamshire County Council"/></a>
         </Link>
 
-        <div className="site-header__actions">
+        <nav className="site-header__navigation">
+            <Link href="/services">
+                <a className="site-header__nav-link">Explore services</a>
+            </Link>
             <SearchBar/>
-            <nav className="site-header__navigation">
-                <Link href="/services">
-                    <a className="site-header__nav-link">Explore services</a>
-                </Link>
-                <Link href="#">
-                    <a className="site-header__nav-link">Log in</a>
-                </Link>
-                <Link href="#">
-                    <a className="site-header__nav-link">Sign up</a>
-                </Link>
-            </nav>
-        </div>
+        </nav>
+        
     </header>

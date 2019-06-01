@@ -1,5 +1,35 @@
 @import '../vars';
 
 .life-events{
-    background: $blue5
+    position: relative;
+    background: $blue5;
+    margin-top: -50px;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    overflow: hidden;
+    // Sloped top edge
+    &:after{
+        content: "";
+        display: block;
+        width: 300%;
+        position: absolute;
+        background-repeat: no-repeat;
+        background: white;
+        height: 65px;
+        top: 0;
+        left: 50%;
+        transform: rotate(5deg) translateX(-50%);
+    }
+}
+
+.life-events__headline{
+    margin-bottom: 20px;
+}
+
+.life-events__list{
+    list-style: none;
+}
+
+.life-events__item{
+    margin-bottom: 20px;
 }
