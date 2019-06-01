@@ -6,6 +6,11 @@ export const getLifeEvents = async () => {
     return await res.json()
 }
 
+export const getPopularPages = async () => {
+    const res = await fetch(`${apiHost}/api/v2/pages/?popular=true`) 
+    return await res.json()
+}
+
 export const getPageById = async (id) => {
     const res2 = await fetch(`${apiHost}/api/v2/pages/${id}`) 
     return await res2.json()

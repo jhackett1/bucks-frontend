@@ -1,12 +1,12 @@
 import React from 'react'
 import { withRouter } from 'next/router'
 import Layout from '../components/Layout'
-import {getPageBySlug} from '../api/wagtailPages'
+import {getPageByPath} from '../api/wagtailPages'
 
 export default class LifeEvent extends React.Component{
 
     static async getInitialProps ({ query }) {
-        return await getPageBySlug(query.slug)
+        return await getPageByPath(query.slug)
     }
 
     render(){

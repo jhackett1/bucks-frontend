@@ -2,3 +2,24 @@
     padding-top: 30px;
     padding-bottom: 30px;
 }
+
+.popular-advice__items{
+    @media screen and (min-width: 350px){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 15px;
+    }
+}
+
+
+.popular-advice__item{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.popular-advice__image{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}

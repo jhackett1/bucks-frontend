@@ -5,8 +5,10 @@ import NeedsExplorer from '../components/NeedsExplorer'
 import LifeEventsList from '../components/LifeEventsList'
 import {getLifeEvents} from '../api/wagtailPages'
 import PopularAdvice from '../components/PopularAdvice';
+import SearchPanel from '../components/SearchPanel';
 
 const fakePages = [true, true, true, true, true, true]
+const fakePages1 = [true, true, true]
 
 export default class Index extends React.Component{
 
@@ -24,7 +26,8 @@ export default class Index extends React.Component{
                 </div>
                 <LifeEventsList items={this.props.items}/>
                 <PopularAdvice pages={fakePages}/>
-            </Layout>
+                <SearchPanel popularPages={fakePages1}/>
+            </Layout> 
         )
     }
 }

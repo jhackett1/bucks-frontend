@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import SearchBar from '../SearchBar'
+import SearchBar from '../SmallSearch'
 
 import './style.scss'
 import logo from './logo.svg'
