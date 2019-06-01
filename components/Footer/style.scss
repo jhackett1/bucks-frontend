@@ -1,0 +1,22 @@
+.footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 0.95em;
+
+    a:hover{
+        text-decoration: none;
+    }
+}
+
+.footer__text{
+    margin-bottom: 15px;
+}
+
+.footer__menu{
+    list-style: none;
+}
+
+.footer__menu-item{
+    display: inline-block;
+    margin-right: 15px;
+}
