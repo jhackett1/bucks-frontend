@@ -4,6 +4,9 @@ import Hero from '../components/Hero'
 import NeedsExplorer from '../components/NeedsExplorer'
 import LifeEventsList from '../components/LifeEventsList'
 import {getLifeEvents} from '../api/wagtailPages'
+import PopularAdvice from '../components/PopularAdvice';
+
+const fakePages = [true, true, true, true, true, true]
 
 export default class Index extends React.Component{
 
@@ -12,13 +15,15 @@ export default class Index extends React.Component{
     }
 
     render(){
+        console.log(this.props.items)
         return(
             <Layout>
                 <Hero/>
-                <div class="container">
+                <div className="container">
                     <NeedsExplorer/>
                 </div>
                 <LifeEventsList items={this.props.items}/>
+                <PopularAdvice pages={fakePages}/>
             </Layout>
         )
     }
