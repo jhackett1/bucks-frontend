@@ -7,7 +7,7 @@ const LifeEvent = ({item}) =>
         <Link href={`/life-event/${item.meta.slug}`}>
             <a className="life-events__title">{item.title}</a>
         </Link>
-        <p className="life-events__summary">{item.homepage_summary}</p>
+        <p className="life-events__summary">{item.summary}</p>
     </li>
 
 export default ({items})=>

@@ -2,14 +2,14 @@ import fetch from 'isomorphic-unfetch'
 import {apiHost} from '../config.js'
 
 export const getLifeEvents = async () => {
-    const res = await fetch(`${apiHost}/api/v2/pages/?type=lifeevents.LifeEventPage&fields=*`) 
+    const res = await fetch(`${apiHost}/api/v2/pages/?type=lifeevents.LifeEvent&fields=*`) 
     return await res.json()
 }
 
-export const getPopularPages = async () => {
-    const res = await fetch(`${apiHost}/api/v2/pages/?popular=true`) 
-    return await res.json()
-}
+// export const getPopularPages = async () => {
+//     const res = await fetch(`${apiHost}/api/v2/pages/?popular=true`) 
+//     return await res.json()
+// }
 
 export const getPageById = async (id) => {
     const res2 = await fetch(`${apiHost}/api/v2/pages/${id}`) 
