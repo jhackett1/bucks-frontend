@@ -1,3 +1,4 @@
+import React from 'react'
 import PopularPages from '../PopularPages'
 import './style.scss'
 import icon from '../SmallSearch/search.svg'

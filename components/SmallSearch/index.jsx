@@ -1,3 +1,4 @@
+import React from 'react'
 import './style.scss'
 import icon from './search.svg'
 
