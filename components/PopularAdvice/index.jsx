@@ -5,7 +5,7 @@ import './style.scss'
 const Page = ({page}) => 
     <Link href={page.meta.html_url}>
         <a className="popular-advice__item">
-            {page.image && <img className="popular-advice__image" src={page.image.meta.download_url} alt="test" loading="lazy"/>}
+            {page.image && <img className="popular-advice__image" src={page.image.meta.download_url} alt={page.image.title} loading="lazy"/>}
             <h3 className="popular-advice__title">{page.title}</h3>
         </a>
     </Link>
