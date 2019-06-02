@@ -3,7 +3,7 @@ import Link from 'next/link'
 import './style.scss'
 
 const Page = ({page}) => 
-    <Link href="#">
+    <Link href={page.meta.html_url}>
         <a className="popular-advice__item">
             <img className="popular-advice__image" src='http://placehold.it/300x200' alt="test"/>
             <h3 className="popular-advice__title">{page.title}</h3>

@@ -11,9 +11,16 @@ app
   .then(() => {
     const server = express()
 
-    server.get('/life-event/:slug', (req, res) => {
+    // Intercept parent pages and their subpages
+    server.get(['/:slug', '/:slug/:subpage*'], (req, res) => {
         const actualPage = '/life-event'
-        const queryParams = { slug: req.params.slug }
+
+        const queryParams = { 
+          slug: req.params.slug,
+          subpage: req.params.subpage,
+          path: req.path
+        }
+        
         app.render(req, res, actualPage, queryParams)
     })
 

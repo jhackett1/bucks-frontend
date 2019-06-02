@@ -7,7 +7,7 @@ import NeedsExplorerSection from './NeedsExplorerSection';
 
 const Blocks = ({blocks}) =>
     <>
-        {blocks.map((block, i)=>
+        {blocks && blocks.map((block, i)=>
             <>
                 {(block.type === "rich_text") && <RichText key={i} content={block.value}/>}
                 {(block.type === "call_to_action") && <CallToActionButton key={i} url={block.value.url} text={block.value.button_text}/>}

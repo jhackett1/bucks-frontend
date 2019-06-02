@@ -2,19 +2,27 @@ import React from 'react'
 import Link from 'next/link'
 import './style.scss'
 
-const Breadcrumbs = ({items}) =>
+const Breadcrumbs = ({parent, title}) =>
     <ul className="breadcrumbs">
-        {items.map((item, i)=>
-            <li className="breadcrumbs__item" key={i}>
-                {(item.url)? <Link href={item.url}><a className="breadcrumbs__link">{item.title}</a></Link> : item.title}
+        {parent.id != 3 &&
+            <li className="breadcrumbs__item">
+                <Link href="/"><a className="breadcrumbs__link">Care for adults</a></Link>
             </li>
-        )}
+        }
+
+
+        <li className="breadcrumbs__item">
+            <Link href={parent.meta.html_url}><a className="breadcrumbs__link">{parent.title}</a></Link>
+        </li>
+
+
+        <li className="breadcrumbs__item">{title}</li>
     </ul>
 
-export default ({breadcrumbs, title, intro}) =>
+export default ({parent, title, intro}) =>
     <section className="page-header">
         <div className="container">
-            <Breadcrumbs items={breadcrumbs}/>
+            <Breadcrumbs parent={parent} title={title}/>
             {title && <h1 className="page-header__title">{title}</h1>}
             {intro && <p className="page-header__intro">{intro}</p>}
         </div>

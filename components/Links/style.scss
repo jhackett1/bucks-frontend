@@ -5,8 +5,12 @@
     padding-top: 30px;
 }
 
+
 .links__title{
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+    &.links__title--external{
+        margin-bottom: 5px;
+    }
 }
 
 .links__lede{

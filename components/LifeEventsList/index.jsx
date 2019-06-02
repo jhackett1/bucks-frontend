@@ -5,7 +5,7 @@ import './style.scss'
 
 const LifeEvent = ({item}) =>
     <li className="life-events__item">
-        <Link href={`/life-event/${item.meta.slug}`}>
+        <Link href={`/${item.meta.slug}`}>
             <a className="life-events__title">{item.title}</a>
         </Link>
         <p className="life-events__summary">{item.summary}</p>

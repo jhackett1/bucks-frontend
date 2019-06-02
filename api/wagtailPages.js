@@ -22,14 +22,19 @@ export const getPageById = async (id) => {
     return await res2.json()
 }
 
-export const getPageBySlug = async (slug) => {
-    // TODO: add proper error handling here
-    const res = await fetch(`${apiHost}/api/v2/pages?slug=${slug}`) 
-    const results = await res.json()
-    return await getPageById(results.items[0].id)
-}
+// export const getPageBySlug = async (slug) => {
+//     // TODO: add proper error handling here
+//     const res = await fetch(`${apiHost}/api/v2/pages?slug=${slug}`) 
+//     const results = await res.json()
+//     return await getPageById(results.items[0].id)
+// }
 
 export const getPageByPath = async (path) => {
     const res = await fetch(`${apiHost}/api/v2/pages/find/?html_path=${path}`) 
+    return await res.json()
+}
+
+export const getChildrenById = async (id) => {
+    const res = await fetch(`${apiHost}/api/v2/pages?type=lifeevents.GenericContent&fields=*&child_of=${id}`) 
     return await res.json()
 }
