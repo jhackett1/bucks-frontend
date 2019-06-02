@@ -18,6 +18,6 @@ export default ({popularPages}) =>
             <h2 className="search-panel__title section-title">Search</h2>
             <p className="search-panel__lede">Find more information, advice and guidance</p>
             <SearchForm/>
-            <PopularPages popularPages={popularPages}/>
+            {popularPages && <PopularPages popularPages={popularPages}/>}
         </div>
     </section>

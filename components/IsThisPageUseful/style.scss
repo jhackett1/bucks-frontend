@@ -1,0 +1,28 @@
+@import '../vars';
+
+.useful-page{
+    border-bottom: 6px solid $blue3;
+}
+
+.useful-page__inner{
+    background: $blue3;
+    padding: 10px 15px;
+    border-radius: 5px 5px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.useful-page__button{
+    border: none;
+    background: none;
+    text-decoration: underline;
+    font-size: 1em;
+    margin-right: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    &:last-of-type{
+        margin-right: 0px;
+    }
+}

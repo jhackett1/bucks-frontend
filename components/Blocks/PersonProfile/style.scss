@@ -21,4 +21,36 @@
 .person-profile__text{
     margin: 0px 20px 20px 20px;
     @include richText;
+    height: 90px;
+    overflow: hidden;
+    position: relative;
+    &:after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1));
+    }
+    &.person-profile__text--unfolded{
+        height: auto;
+        &:after{
+            display: none;
+        }
+    }
+}
+
+.person-profile__unfold-button{
+    width: 100%;
+    background: $blue4;
+    color: $blue1;
+    border: none;
+    padding: 15px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
 }

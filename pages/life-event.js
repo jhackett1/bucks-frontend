@@ -4,7 +4,10 @@ import Layout from '../components/Layout'
 import PageHeader from '../components/PageHeader'
 import PageContent from '../components/PageContentSection'
 import Blocks from '../components/Blocks'
+import Links from '../components/Links'
 import {getPageByPath} from '../api/wagtailPages'
+import SearchPanel from '../components/SearchPanel'
+
 
 export default class LifeEvent extends React.Component{
 
@@ -26,7 +29,10 @@ export default class LifeEvent extends React.Component{
                 ]} title={this.props.title} intro={this.props.intro}/>
                 <PageContent>
                     <Blocks blocks={this.props.content}/>
+
+                    <Links links={this.props.external_links}/>
                 </PageContent>
+                <SearchPanel/>
             </Layout>
         )
     }
