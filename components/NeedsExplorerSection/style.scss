@@ -1,0 +1,22 @@
+@import '../vars';
+
+.needs-explorer-section{
+    background: $yellow;
+    position: relative;
+    border-radius: 5px;
+}
+
+.needs-explorer-section__inner{
+    padding: 20px 20px;
+}
+
+.needs-explorer-section__headline{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.needs-explorer-section__lede{
+    font-size: 0.95em;
+    margin-bottom: 25px;
+    text-align: center;
+}

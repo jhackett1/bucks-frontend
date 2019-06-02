@@ -4,8 +4,7 @@ import RichText from './RichText'
 import PersonProfile from './PersonProfile';
 import CallToActionButton from './CallToActionButton';
 
-
-export default ({blocks}) =>
+const Blocks = ({blocks}) =>
     <>
         {blocks.map((block, i)=>
             <>
@@ -15,3 +14,5 @@ export default ({blocks}) =>
             </>
         )}
     </>
+
+export default Blocks

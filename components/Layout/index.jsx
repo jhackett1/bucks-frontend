@@ -6,6 +6,8 @@ import Footer from '../Footer'
 
 import './style.scss'
 
+console.warn("⚠️ This is prototype code. Exercise care before reusing. ⚠️")
+
 export default ({children})=>
 <>
     <Head>

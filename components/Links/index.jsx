@@ -11,7 +11,7 @@ export default ({links}) =>
         {links.map((link, i)=>
 
 
-            <Link href={link.url}>
+            <Link href={link.url} key={i}>
                 <a className="link-tile">
                     <h3 className="link-tile__title">{link.title}</h3>
                     <p className="link-tile__summary">{link.summary}</p>
