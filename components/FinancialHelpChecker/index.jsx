@@ -10,7 +10,7 @@ import './style.scss'
 export default () => {
 
     const [page, changePage] = useState(1)
-    const [kindOfHelp, answerKindOfHelp] = useState("equipment")
+    const [kindOfHelp, answerKindOfHelp] = useState(null)
     const [anySavings, answerAnySavings] = useState(null)
 
     return(
