@@ -1,0 +1,16 @@
+@import '../../vars';
+
+.call-to-action-button{
+    display: block;
+    border-radius: 100px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    background: $yellow;
+    margin-bottom: 25px;
+    transition: 0.1s ease-out;
+    &:hover{
+        background-color: $orange;
+    }
+}

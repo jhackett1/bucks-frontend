@@ -50,4 +50,7 @@
 
 .breadcrumbs__link{
     color: $blue2;
+    &:hover{
+        text-decoration: none;
+    }
 }
