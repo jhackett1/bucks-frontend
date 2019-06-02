@@ -34,8 +34,8 @@ export default class LifeEvent extends React.Component{
                 <PageHeader parent={this.props.meta.parent} title={this.props.title} intro={this.props.intro}/>
                 <PageContent>
                     <Blocks blocks={this.props.content}/>
-                    <Links links={this.state.childPages}/>
-                    <Links links={this.props.external_links} external/>
+                    {this.state.childPages.length > 0 && <Links links={this.state.childPages}/>}
+                    {this.props.external_links.length > 0 && <Links links={this.props.external_links} external/>}
                 </PageContent>
                 <SearchPanel/>
             </Layout>

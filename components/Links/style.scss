@@ -27,6 +27,15 @@
     overflow: hidden;
     margin-bottom: 20px;
     text-decoration: none;
+    transition: 0.1s ease-in-out;
+    &:hover{
+        .link-tile__title{
+            color: lighten($blue1, 10);
+        }
+        .link-tile__call-to-action{
+            background: lighten($blue1, 10);
+        }
+    }
 }
 
 .link-tile__title{
@@ -47,4 +56,5 @@
     justify-content: space-between;
     align-items: center;
     font-size: 0.9em;
+    transition: 0.1s ease-in-out;
 }

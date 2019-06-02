@@ -6,7 +6,7 @@ import arrow from './arrow.svg'
 
 export const LinkTile = ({link, external}) =>
     <Link href={link.url || link.meta.html_url}>
-        <a className="link-tile">
+        <a className="link-tile"  target={external && "blank"}>
             <h3 className="link-tile__title">{link.title}</h3>
             <p className="link-tile__summary">{link.summary}</p>
             {external && <div className="link-tile__call-to-action">{link.link_text} <img className="link-tile__icon" aria-hidden="true" role="presentation" alt="" src={arrow}/></div>}

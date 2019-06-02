@@ -13,4 +13,7 @@
 
 .popular-pages__link{
     color: white;
+    &:hover{
+        text-decoration: none;
+    }
 }
