@@ -8,12 +8,13 @@ $blue5: #F2F5F9;
 $accentBlue: #EEF3F9;
 
 $yellow: #F8CF61;
-$orange: #F18213;
+$orange: rgb(236, 170, 46);
 $green: #70B7A1;
 
 @mixin richText{
     p{
         margin-bottom: 20px;
+        line-height: 1.4em;
     }
     ol, ul{
         margin-bottom: 20px;
@@ -25,5 +26,16 @@ $green: #70B7A1;
     }
     h2, h3, h4, h5, h6{
         margin-bottom: 10px;
+    }
+    a{
+        font-weight: bold;
+        text-decoration: none;
+        background-size: 1px 1em;
+        box-shadow: inset 0 -0.05em $blue5, inset 0 -0.2em $yellow;
+        // display: inline;
+        transition: 0.3s ease-out;
+        &:hover{
+            box-shadow: inset 0 -0.05em $blue5, inset 0 -0.2em $orange;
+        }
     }
 }
