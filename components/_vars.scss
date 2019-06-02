@@ -10,3 +10,20 @@ $accentBlue: #EEF3F9;
 $yellow: #F8CF61;
 $orange: #F18213;
 $green: #70B7A1;
+
+@mixin richText{
+    p{
+        margin-bottom: 20px;
+    }
+    ol, ul{
+        margin-bottom: 20px;
+        padding-left: 20px;
+    }
+    li{
+        padding-left: 15px;
+        margin-bottom: 10px;
+    }
+    h2, h3, h4, h5, h6{
+        margin-bottom: 10px;
+    }
+}

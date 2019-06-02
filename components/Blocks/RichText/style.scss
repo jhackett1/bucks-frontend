@@ -1,0 +1,6 @@
+@import '../../vars';
+
+.rich-text{
+    margin-bottom: 25px;
+    @include richText;
+}

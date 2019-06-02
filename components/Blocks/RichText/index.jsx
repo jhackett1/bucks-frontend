@@ -1,4 +1,5 @@
 import React from 'react'
+import './style.scss'
 
 export default ({content}) =>
-    <div dangerouslySetInnerHTML={{__html: content}}>{console.log(content)}</div>
+    <div className="rich-text" dangerouslySetInnerHTML={{__html: content}}></div>
