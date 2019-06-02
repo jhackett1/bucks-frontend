@@ -8,7 +8,18 @@ import PopularAdvice from '../components/PopularAdvice';
 import SearchPanel from '../components/SearchPanel';
 
 // const fakePages = [true, true, true, true, true, true]
-const fakePages1 = [true, true, true]
+const popularSearches = [
+    {
+        title: "I need urgent help",
+        url: "#"
+    },{
+        title: "Explore services in my local area",
+        url: "#"
+    },{
+        title: "Coping with loneliness",
+        url: "#"
+    }
+]
 
 
 export default class Index extends React.Component{
@@ -28,7 +39,7 @@ export default class Index extends React.Component{
                 </div>
                 <LifeEventsList items={lifeEvents}/>
                 <PopularAdvice pages={popularAdvice}/>
-                <SearchPanel popularPages={fakePages1}/>
+                <SearchPanel popularPages={popularSearches}/>
             </Layout> 
         )
     }

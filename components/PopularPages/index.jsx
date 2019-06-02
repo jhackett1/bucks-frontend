@@ -8,7 +8,7 @@ export default ({popularPages}) =>
         <ul className="popular-pages__list">
             {popularPages.map((page, i)=>
                 <li className="popular-pages__item" key={i}>
-                    <Link href="#"><a className="popular-pages__link">Popular page name goes here</a></Link>
+                    <Link href={page.url}><a className="popular-pages__link">{page.title}</a></Link>
                 </li>
             )}
         </ul>

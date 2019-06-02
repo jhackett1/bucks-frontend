@@ -1,0 +1,37 @@
+@import '../vars';
+
+.financial-checker{
+    background: $blue3;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.financial-checker__title{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.financial-checker__lede{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.financial-checker__button{
+    display: block;
+    width: 100%;
+    font-size: 1em;
+    border: none;
+    border-radius: 100px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    background: $blue1;
+    color: white;
+    transition: 0.1s ease-out;
+    cursor: pointer;
+    &:hover{
+        background-color: lighten($blue1, 10);
+    }
+}
