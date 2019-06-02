@@ -1,5 +1,5 @@
 import React from 'react'
-import NeedsExplorer from '../NeedsExplorer'
+import NeedsExplorer from '../../NeedsExplorer'
 import './style.scss'
 
 export default () =>

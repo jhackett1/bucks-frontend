@@ -1,4 +1,4 @@
-@import '../vars';
+@import '../../vars';
 
 .needs-explorer-section{
     background: $yellow;
@@ -8,6 +8,10 @@
 
 .needs-explorer-section__inner{
     padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .needs-explorer-section__headline{
