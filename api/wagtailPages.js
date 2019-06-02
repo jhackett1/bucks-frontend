@@ -6,7 +6,7 @@ export const getHomepageContent = async () => {
         // Life events
         `${apiHost}/api/v2/pages?type=lifeevents.LifeEventPage&child_of=3&fields=*`,
         // Popular advice
-        `${apiHost}/api/v2/pages/?type=lifeevents.GenericContentPage&fields=*`
+        `${apiHost}/api/v2/pages/?type=lifeevents.GenericContentPage&fields=*&popular=true`
     ]
     return await Promise.all(endpoints.map(endpoint =>
         fetch(endpoint)
