@@ -21,9 +21,10 @@
 .person-profile__text{
     margin: 0px 20px 20px 20px;
     @include richText;
-    height: 90px;
+    // height: 90px;
     overflow: hidden;
     position: relative;
+    margin-bottom: 0px;
     &:after{
         content: "";
         position: absolute;
@@ -35,7 +36,7 @@
         background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1));
     }
     &.person-profile__text--unfolded{
-        height: auto;
+        margin-bottom: 20px;
         &:after{
             display: none;
         }
@@ -44,7 +45,7 @@
 
 .person-profile__unfold-button{
     width: 100%;
-    background: $blue4;
+    background: $blue5;
     color: $blue1;
     border: none;
     padding: 15px;
@@ -53,4 +54,9 @@
     cursor: pointer;
     position: relative;
     z-index: 2;
+}
+
+.person-profile__icon{
+    margin-left: 10px;
+    transform: translateY(-1px)
 }
