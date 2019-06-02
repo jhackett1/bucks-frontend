@@ -6,7 +6,7 @@ const Page = ({page}) =>
     <Link href="#">
         <a className="popular-advice__item">
             <img className="popular-advice__image" src='http://placehold.it/300x200' alt="test"/>
-            <h3 className="popular-advice__title">Page title goes here</h3>
+            <h3 className="popular-advice__title">{page.title}</h3>
         </a>
     </Link>
 

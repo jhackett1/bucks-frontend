@@ -1,15 +1,21 @@
 import fetch from 'isomorphic-unfetch'
-import {apiHost} from '../config.js'
+import {apiHost, homepageId} from '../config.js'
 
-export const getLifeEvents = async () => {
-    const res = await fetch(`${apiHost}/api/v2/pages/?type=lifeevents.LifeEvent&fields=*`) 
-    return await res.json()
+export const getHomepageContent = async () => {
+    const endpoints = [
+        // Life events
+        `${apiHost}/api/v2/pages?type=lifeevents.LifeEvent&child_of=3&fields=*`,
+        // Popular advice
+        `${apiHost}/api/v2/pages/?type=lifeevents.GenericContent&fields=*`
+    ]
+    return await Promise.all(endpoints.map(endpoint =>
+        fetch(endpoint)
+            .then(res => res.json())    
+    ))
+    .then(items => {
+        return items
+    })
 }
-
-// export const getPopularPages = async () => {
-//     const res = await fetch(`${apiHost}/api/v2/pages/?popular=true`) 
-//     return await res.json()
-// }
 
 export const getPageById = async (id) => {
     const res2 = await fetch(`${apiHost}/api/v2/pages/${id}`) 
