@@ -4,7 +4,7 @@ import icon from '../SmallSearch/search.svg'
 
 const SearchForm = () =>
     <form className="search-form">
-        <label className="visually-hidden" for="query">Search query</label>
+        <label className="visually-hidden" htmlFor="query">Search query</label>
         <input className="search-form__input" type="search" id="query" name="query" placeholder="Start typing..."></input>
         <button className="search-form__submit" type="submit">
             <img className="search-form__icon" src={icon} alt="Submit search"/>
