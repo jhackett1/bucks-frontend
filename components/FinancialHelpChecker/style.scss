@@ -8,13 +8,17 @@
 }
 
 .financial-checker__title{
-    text-align: center;
     margin-bottom: 5px;
+    &.financial-checker__title--centred{
+        text-align: center;
+    }
 }
 
 .financial-checker__lede{
-    text-align: center;
     margin-bottom: 20px;
+    &.financial-checker__lede--centred{
+        text-align: center;
+    }
 }
 
 .financial-checker__button{
@@ -33,5 +37,12 @@
     cursor: pointer;
     &:hover{
         background-color: lighten($blue1, 10);
+    }
+    &.financial-checker__button--inverted{
+        color: $blue1;
+        background: white;
+        &:hover{
+            background-color: $blue5;
+        }
     }
 }
