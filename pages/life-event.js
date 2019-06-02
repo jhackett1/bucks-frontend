@@ -2,8 +2,10 @@ import React from 'react'
 import { withRouter } from 'next/router'
 import Layout from '../components/Layout'
 import PageHeader from '../components/PageHeader'
+import Blocks from '../components/Blocks'
 import {getPageByPath} from '../api/wagtailPages'
-import { throws } from 'assert';
+
+import './life-event.scss'
 
 export default class LifeEvent extends React.Component{
 
@@ -15,7 +17,20 @@ export default class LifeEvent extends React.Component{
         return(
             <Layout>
 
-                <PageHeader headline={this.props.title} lede={this.props.intro}/>
+                <PageHeader breadcrumbs={[
+                    {
+                        title: "Care for adults",
+                        url: "/"
+                    },
+                    {
+                        title: this.props.title
+                    },
+                ]} title={this.props.title} intro={this.props.intro}/>
+                <div className="page-content">
+                    <div className="container">
+                        <Blocks blocks={this.props.content}/>
+                    </div>
+                </div>
 
             </Layout>
         )
