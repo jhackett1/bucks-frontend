@@ -1,3 +1,5 @@
+@import '../vars';
+
 .needs-explorer{
     padding: 20px;
     border-radius: 5px;
@@ -15,4 +17,12 @@
 .needs-explorer__question{
     font-size: 1.1em;
     margin-bottom: 20px;
+}
+
+.help-text{
+    margin-top: 5px;
+    display: inline-block;
+    font-size: 0.9em;
+    color: $blue2;
+    font-style: italic;
 }

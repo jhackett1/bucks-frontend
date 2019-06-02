@@ -13,7 +13,7 @@ app
 
     // Intercept parent pages and their subpages
     server.get(['/:slug', '/:slug/:subpage*'], (req, res) => {
-        const actualPage = '/life-event'
+        const actualPage = '/page'
 
         const queryParams = { 
           slug: req.params.slug,

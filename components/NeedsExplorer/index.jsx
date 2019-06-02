@@ -7,4 +7,6 @@ export default () =>
         <p className="needs-explorer__question">Are you looking for support for yourself, or someone you care for?</p>
         <Checkbox label="Myself" name="test"/>
         <Checkbox label="Someone else" name="test2"/>
+
+        <p className="help-text">Choose one or both options</p>
     </section>
