@@ -1,10 +1,5 @@
 import React from 'react'
-
-const RadioButton = ({label, value, name, handleChange, valueState}) =>
-    <>
-        <label htmlFor={value}>{label}</label>
-        <input type="radio" name={name} value={value} id={value} checked={valueState === value} onChange={handleChange} required/>
-    </>
+import RadioPanel from './RadioPanel'
 
 const Page2 = ({changePage, kindOfHelp, answerKindOfHelp}) => {
 
@@ -14,15 +9,11 @@ const Page2 = ({changePage, kindOfHelp, answerKindOfHelp}) => {
 
     return(
         <>
-            {kindOfHelp}
             <h2 className="financial-checker__title">What kind of help do you need?</h2>
-
             <form id="kind-of-help">
-
-                <RadioButton label="Equipment" name="kind-of-help" value="equipment" handleChange={handleChange} valueState={kindOfHelp}/>
-                <RadioButton label="Care at home" name="kind-of-help" value="at-home" handleChange={handleChange} valueState={kindOfHelp}/>
-                <RadioButton label="Residential care" name="kind-of-help" value="residential" handleChange={handleChange} valueState={kindOfHelp}/>
-
+                <RadioPanel label="Equipment in my own home" description="This includes shower chairs, raised toilet seats and grab rails" name="kind-of-help" value="equipment" handleChange={handleChange} valueState={kindOfHelp}/>
+                <RadioPanel label="Care and support in my own home" description="This includes someone who visits to help you with personal care, such as dressing and bathing" name="kind-of-help" value="at-home" handleChange={handleChange} valueState={kindOfHelp}/>
+                <RadioPanel label="Residential or nursing care home" name="kind-of-help" value="residential" handleChange={handleChange} valueState={kindOfHelp}/>
                 <button className="financial-checker__button" onClick={()=>{
                     if(document.querySelector("#kind-of-help").checkValidity()){
                         changePage(3)

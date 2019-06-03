@@ -8,9 +8,9 @@ const Page4 = ({reset, kindOfHelp, anySavings}) =>
         {kindOfHelp}<br/>
         {anySavings}
 
-        <p>Everyone has to pay something towards their residential care, but you may be entitled to financial help.</p>
-        <p>We can help you find the best care options to suit you during a social care assessment.</p>
-        <p>Your savings and income will be taken account during your assessment.</p>
+        <p className="financial-checker__lede">Everyone has to pay something towards their residential care, but you may be entitled to financial help.</p>
+        <p className="financial-checker__lede">We can help you find the best care options to suit you during a <a>social care assessment</a>.</p>
+        <p className="financial-checker__lede">Your savings and income will be taken account during your assessment.</p>
         <button className="financial-checker__button financial-checker__button--inverted" onClick={()=>{reset()}}>Start again</button>
     </>
 
