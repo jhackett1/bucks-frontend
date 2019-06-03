@@ -3,7 +3,7 @@ import Link from 'next/link'
 import './style.scss'
 
 export default ({popularPages}) =>
-    <>
+    <div>
         <h3 className="popular-pages__title">Popular pages</h3>
         <ul className="popular-pages__list">
             {popularPages.map((page, i)=>
@@ -12,4 +12,4 @@ export default ({popularPages}) =>
                 </li>
             )}
         </ul>
-    </>
+    </div>

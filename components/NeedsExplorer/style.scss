@@ -17,6 +17,18 @@
 .needs-explorer__question{
     font-size: 1.1em;
     margin-bottom: 20px;
+    @media screen and (min-width: 600px){
+        font-size: 1.2em;
+        margin-bottom: 25px;
+    }
+}
+
+.needs-explorer__options{
+    @media screen and (min-width: 500px){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+    }
 }
 
 .help-text{

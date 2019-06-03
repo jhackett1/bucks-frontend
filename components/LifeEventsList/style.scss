@@ -6,19 +6,18 @@
     margin-top: -50px;
     padding-top: 90px;
     padding-bottom: 40px;
-    overflow: hidden;
-    // Sloped top edge
-    &:after{
-        content: "";
-        display: block;
-        width: 300%;
-        position: absolute;
-        background-repeat: no-repeat;
-        background: white;
-        height: 65px;
-        top: 0;
-        left: 50%;
-        transform: rotate(5deg) translateX(-50%);
+
+    @media screen and (min-width: 600px){
+        padding-top: 110px;
+        padding-bottom: 60px;
+        &:after{
+            content: "";
+            display: block;
+            clear: both;
+            @supports (display: grid) {
+                content: none
+            }
+        }
     }
 }
 
@@ -33,6 +32,25 @@
 
 .life-events__item{
     margin-bottom: 25px;
+    @media screen and (min-width: 600px){
+        margin-bottom: 30px;
+        // IE fallback layout
+        float: left;
+        width: 40%;
+        margin-right: 10%;
+        @supports (display: grid) {
+            float: none;
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+}
+
+.life-events__link{
+    text-decoration: none;
+    &:hover .life-events__title{
+        box-shadow: inset 0 -0.03em $blue5, inset 0 -0.18em $orange;
+    }
 }
 
 .life-events__title{
@@ -40,15 +58,19 @@
     text-decoration: none;
     font-size: 1.3em;
     background-size: 1px 1em;
-    box-shadow: inset 0 -0.05em $blue5, inset 0 -0.18em $yellow;
-    // display: inline;
+    box-shadow: inset 0 -0.03em $blue5, inset 0 -0.18em $yellow;
     transition: 0.3s ease-out;
-    &:hover{
-        box-shadow: inset 0 -0.05em $blue5, inset 0 -0.18em $orange;
+    display: inline;
+
+    @media screen and (min-width: 600px){
+        font-size: 1.5em;
     }
 }
 
 .life-events__summary{
     margin-top: 3px;
     display: block;
+    @media screen and (min-width: 600px){
+        margin-top: 5px
+    }
 }
