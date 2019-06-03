@@ -20,6 +20,9 @@
         align-items: flex-start;
         justify-content: space-between;
     }
+    @media screen and (min-width: 600px){
+        align-items: center;
+    }
 }
 
 .site-header__logo{
@@ -37,5 +40,11 @@
     }
     @media screen and (min-width: 800px){
         margin-top: 0px;
+    }
+    &.site-header__nav-link--desktop-only{
+        display: none;
+        @media screen and (min-width: 800px){
+            display: block;
+        }
     }
 }

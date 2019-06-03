@@ -4,6 +4,9 @@
     background: none;
     border: none;
     cursor: pointer;
+    @media screen and (min-width: 600px) {
+        display: none;
+    }
 }
 
 .small-search__icon{
@@ -17,10 +20,25 @@
     right: 10px;
     top: 10px;
     left: 10px;
+    @media screen and (min-width: 600px) {
+        display: none;
+    }
 }
 
 .small-search__form{
     position: relative;
+    &.small-search__form--desktop-only{
+        display: none;
+        @media screen and (min-width: 600px) {
+            display: block;
+        }
+        .small-search__input{
+            padding: 7px 40px 7px 17px;
+        }
+        .small-search__submit{
+            top: 7px
+        }
+    }
 }
 
 .small-search__input{
