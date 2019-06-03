@@ -15,6 +15,12 @@ export default () =>
             <Link href="/services">
                 <a className="site-header__nav-link">Explore services</a>
             </Link>
+            <Link href="#">
+                <a className="site-header__nav-link site-header__nav-link--desktop-only">Log in</a>
+            </Link>
+            <Link href="#">
+                <a className="site-header__nav-link site-header__nav-link--desktop-only">Sign up</a>
+            </Link>
             <SearchBar/>
         </nav>
         

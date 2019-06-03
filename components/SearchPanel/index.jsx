@@ -16,8 +16,15 @@ export default ({popularPages}) =>
     <section className="search-panel">
         <div className="container">
             <h2 className="search-panel__title section-title">Search</h2>
-            <p className="search-panel__lede">Find more information, advice and guidance</p>
-            <SearchForm/>
-            {popularPages && <PopularPages popularPages={popularPages}/>}
+
+            <div className="search-panel__columns">
+                <aside>
+                    <p className="search-panel__lede">Find more information, advice and guidance</p>
+                    <SearchForm/>
+                </aside>
+                <aside>
+                    {popularPages && <PopularPages popularPages={popularPages}/>}
+                </aside>
+            </div>
         </div>
     </section>

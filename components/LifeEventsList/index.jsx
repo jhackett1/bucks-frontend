@@ -6,9 +6,12 @@ import './style.scss'
 const LifeEvent = ({item}) =>
     <li className="life-events__item">
         <Link href={`/${item.meta.slug}`}>
-            <a className="life-events__title">{item.title}</a>
+            <a className="life-events__link">
+                <h3 className="life-events__title">{item.title}</h3>
+                <p className="life-events__summary">{item.summary}</p>
+            </a>
         </Link>
-        <p className="life-events__summary">{item.summary}</p>
+
     </li>
 
 export default ({items})=>

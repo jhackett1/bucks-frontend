@@ -6,5 +6,5 @@ export default () =>
     <section className="hero container">
         <h1 className="hero__headline">Care and support for adults</h1>
         <p className="hero__slogan">Understand the care and support options available in your community.</p>
-        {/* <img className="hero__image" src={hero}/> */}
+        <img className="hero__image" src={hero} alt="Relaxed woman happily reading pile of books"/>
     </section>
