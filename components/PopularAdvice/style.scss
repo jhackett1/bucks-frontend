@@ -9,6 +9,10 @@
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 15px;
     }
+    @media screen and (min-width: 700px){
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+    }
 }
 
 

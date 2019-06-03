@@ -1,16 +1,43 @@
 @import '../vars';
 
-.search{
-    position: relative;
-}
-
-.search__submit{
+.small-search__opener{
     background: none;
     border: none;
     cursor: pointer;
 }
 
-.search__icon{
+.small-search__icon{
+    width: 17px;
     height: 17px;
     transform: translateY(2px)
+}
+
+.small-search__dialog{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    left: 10px;
+}
+
+.small-search__form{
+    position: relative;
+}
+
+.small-search__input{
+    background: $blue5;
+    border-radius: 100px;
+    font-size: 0.95em;
+    color: $blue1;
+    padding: 10px 40px 10px 20px;
+    border: 1px solid $blue4;
+    width: 100%;
+}
+
+.small-search__submit{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
 }

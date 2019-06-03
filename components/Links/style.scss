@@ -28,6 +28,10 @@
     margin-bottom: 20px;
     text-decoration: none;
     transition: 0.1s ease-in-out;
+    position: relative;
+    &.link-tile--external{
+        padding-bottom: 40px;
+    }
     &:hover{
         .link-tile__title{
             color: lighten($blue1, 10);
@@ -35,6 +39,14 @@
         .link-tile__call-to-action{
             background: lighten($blue1, 10);
         }
+    }
+}
+
+.links__list{
+    @media screen and (min-width: 700px){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 20px;
     }
 }
 
@@ -65,4 +77,8 @@
     align-items: center;
     font-size: 0.9em;
     transition: 0.1s ease-in-out;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
 }

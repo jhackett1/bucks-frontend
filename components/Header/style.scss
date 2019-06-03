@@ -7,6 +7,9 @@
         align-items: flex-start;
         justify-content: space-between;
     }
+    @media screen and (min-width: 600px){
+        align-items: center;
+    }
 }
 
 .site-header__navigation{
@@ -27,7 +30,7 @@
 
 .site-header__nav-link{
     text-decoration: none;
-    margin-right: 30px;
+    margin-right: 25px;
     display: inline-block;
     &:hover{
         text-decoration: underline
