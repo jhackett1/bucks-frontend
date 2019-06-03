@@ -1,13 +1,8 @@
 @import '../vars';
 
 .checkbox__label{
-
-
     background: $blue4;
-
     color: $blue1;
-
-
     cursor: pointer;
     display: block;
     border-radius: 100px;
@@ -15,12 +10,8 @@
     padding: 10px;
     font-weight: bold;
     text-decoration: none;
-
     margin-bottom: 10px;
     transition: 0.1s ease-out;
-
-
-
 }
 
 .checkbox__input{

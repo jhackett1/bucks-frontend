@@ -1,10 +1,30 @@
-import React from 'react'
+import React, {useState} from 'react'
+
+import Page1 from './Page1'
+import Page2 from './Page2'
+import Page3 from './Page3'
+import Page4 from './Page4'
 
 import './style.scss'
 
-export default () =>
-    <aside className="financial-checker">
-        <h2 className="financial-checker__title">Financial help</h2>
-        <p className="financial-checker__lede">All care costs something, but if you have less than £23,000 in savings, you could be entitled to financial help.</p>
-        <button className="financial-checker__button">Check now</button>
-    </aside>
+export default () => {
+
+    const [page, changePage] = useState(1)
+    const [kindOfHelp, answerKindOfHelp] = useState(null)
+    const [anySavings, answerAnySavings] = useState(null)
+
+    const reset = () => {
+        changePage(1)
+        answerKindOfHelp(null)
+        answerAnySavings(null)
+    }
+    
+    return(
+        <aside className="financial-checker">
+            {(page === 1) && <Page1 changePage={changePage}/> }
+            {(page === 2) && <Page2 changePage={changePage} kindOfHelp={kindOfHelp} answerKindOfHelp={answerKindOfHelp} /> }
+            {(page === 3) && <Page3 changePage={changePage} anySavings={anySavings} answerAnySavings={answerAnySavings}/> }
+            {(page === 4) && <Page4 reset={reset} kindOfHelp={kindOfHelp} anySavings={anySavings}/> }
+        </aside>
+    )
+}

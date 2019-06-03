@@ -8,13 +8,27 @@
 }
 
 .financial-checker__title{
-    text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+    &.financial-checker__title--centred{
+        text-align: center;
+        margin-bottom: 5px;
+    }
 }
 
 .financial-checker__lede{
-    text-align: center;
+    margin-bottom: 10px;
+    &.financial-checker__lede--centred{
+        text-align: center;
+    }
+}
+
+.financial-checker__help-list{
+    margin-left: 20px;
     margin-bottom: 20px;
+    li{
+        padding-left: 10px;
+        margin-bottom: 5px;
+    }
 }
 
 .financial-checker__button{
@@ -33,5 +47,12 @@
     cursor: pointer;
     &:hover{
         background-color: lighten($blue1, 10);
+    }
+    &.financial-checker__button--inverted{
+        color: $blue1;
+        background: white;
+        &:hover{
+            background-color: $blue5;
+        }
     }
 }
