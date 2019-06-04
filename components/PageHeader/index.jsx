@@ -9,21 +9,19 @@ const Breadcrumbs = ({parent, title}) =>
                 <Link href="/"><a className="breadcrumbs__link">Care for adults</a></Link>
             </li>
         }
-
-
         <li className="breadcrumbs__item">
             <Link href={parent.meta.html_url}><a className="breadcrumbs__link">{parent.title}</a></Link>
         </li>
-
-
         <li className="breadcrumbs__item">{title}</li>
     </ul>
 
 export default ({parent, title, intro}) =>
     <section className="page-header">
         <div className="container">
-            <Breadcrumbs parent={parent} title={title}/>
-            {title && <h1 className="page-header__title">{title}</h1>}
-            {intro && <p className="page-header__intro">{intro}</p>}
+            <div className="two-thirds">
+                <Breadcrumbs parent={parent} title={title}/>
+                {title && <h1 className="page-header__title">{title}</h1>}
+                {intro && <p className="page-header__intro">{intro}</p>}
+            </div>
         </div>
     </section>

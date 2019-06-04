@@ -16,7 +16,7 @@ export const LinkTile = ({link, external}) =>
 
 export default ({links, external}) =>
     <section className="links">
-        <h2 className={(external)? "links__title links__title--external section-title" : "links__title section-title"}>{(external)? "External links" : "Learn more"}</h2>
+        <h2 className={(external)? "links__title links__title--external section-title" : "links__title section-title"}>{(external)? "You may also find useful" : "Learn more"}</h2>
         {external && <p className="links__lede">Discover more about this issue from these trusted websites</p>}
         <div class="links__list">
             {links && links.map((link, i)=>

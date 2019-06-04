@@ -7,4 +7,8 @@
 .page-content__inner{
     padding-top: 25px;
     padding-bottom: 20px;
+    @media screen and (min-width: 600px){
+        padding-top: 45px;
+        padding-bottom: 40px;
+    }
 }

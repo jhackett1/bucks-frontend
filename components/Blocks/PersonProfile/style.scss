@@ -16,12 +16,15 @@
 
 .person-profile__headline{
     margin: 0px 20px 10px 20px;
+    @media screen and (min-width: 600px) {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
 }
 
 .person-profile__text{
     margin: 0px 20px 20px 20px;
     @include richText;
-    // height: 90px;
     overflow: hidden;
     position: relative;
     margin-bottom: 0px;

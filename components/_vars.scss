@@ -16,6 +16,13 @@ $green: #70B7A1;
     p{
         margin-bottom: 25px;
         line-height: 1.6em;
+        @media screen and (min-width: 600px){
+            font-size: 1.1em;
+            margin-bottom: 35px;
+        }
+        @media screen and (min-width: 800px){
+            font-size: 1.2em;
+        }
     }
     ol, ul{
         margin-bottom: 20px;
@@ -24,15 +31,30 @@ $green: #70B7A1;
     li{
         padding-left: 15px;
         margin-bottom: 5px;
+        @media screen and (min-width: 600px){
+            font-size: 1.1em;
+        }
+        @media screen and (min-width: 800px){
+            font-size: 1.2em;
+        }
     }
     h2, h3, h4, h5, h6{
         margin-bottom: 10px;
+        @media screen and (min-width: 800px){
+            margin-bottom: 15px;
+        }
     }
     h2{
         font-size: 1.6em;
+        @media screen and (min-width: 800px){
+            font-size: 1.7em;
+        }
     }
     h3{
         font-size: 1.4em;
+        @media screen and (min-width: 800px){
+            font-size: 1.5em;
+        }
     }
     a{
         font-weight: bold;

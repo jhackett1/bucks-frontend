@@ -35,3 +35,9 @@ $sidewaysPadding: 20px;
         margin-bottom: 35px;
     }
 }
+
+.two-thirds{
+    @media screen and (min-width: 1000px){
+        max-width: 70%;
+    }
+}

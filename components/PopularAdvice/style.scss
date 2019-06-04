@@ -29,7 +29,15 @@
     text-decoration: none;
     margin-bottom: 20px;
     @media screen and (min-width: 700px){
-        margin-bottom: 50px;
+        margin-bottom: 40px;
+    }
+    &:hover{
+        .popular-advice__title{
+            text-decoration: underline;
+        }
+        .popular-advice__image{
+            filter: brightness(1.05)
+        }
     }
 }
 

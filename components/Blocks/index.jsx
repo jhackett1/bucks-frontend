@@ -7,7 +7,7 @@ import NeedsExplorerSection from './NeedsExplorerSection';
 import FinancialHelpChecker from '../FinancialHelpChecker';
 
 const Blocks = ({blocks}) =>
-    <>
+    <div className="two-thirds">
         {blocks && blocks.map((block, i)=>
             <>
                 {(block.type === "rich_text") && <RichText key={i} content={block.value}/>}
@@ -17,6 +17,6 @@ const Blocks = ({blocks}) =>
                 {(block.type === "needs_explorer") && <NeedsExplorerSection key={i} />}
             </>
         )}
-    </>
+    </div>
 
 export default Blocks
