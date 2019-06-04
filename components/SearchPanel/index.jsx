@@ -13,7 +13,7 @@ const SearchForm = () =>
     </form>
 
 export default ({popularPages}) =>
-    <section className="search-panel">
+    <section className={(popularPages)? "search-panel search-panel--with-popular-pages" : "search-panel"}>
         <div className="container">
             <h2 className="search-panel__title section-title">Search</h2>
 

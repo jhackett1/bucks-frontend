@@ -67,4 +67,8 @@ $green: #70B7A1;
             box-shadow: inset 0 -0.05em $blue5, inset 0 -0.2em $orange;
         }
     }
+    hr{
+        border: none;
+        border-top: 2px solid $blue3;
+    }
 }
