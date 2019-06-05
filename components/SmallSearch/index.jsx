@@ -9,7 +9,7 @@ import icon from './search.svg'
 
 const SmallSearchForm = ({desktop}) =>
     <form className={(desktop)? "small-search__form small-search__form--desktop-only" : "small-search__form"}>
-        <label className="visually-hidden" for="query">Search query</label>
+        <label className="visually-hidden" htmlFor="query">Search query</label>
         <input className="small-search__input" type="search" id="query" name="query" placeholder="Start typing..." required></input>
         <button className="small-search__submit" type="submit">
             <img className="small-search__icon" src={icon} alt="Submit search"/>
