@@ -28,7 +28,6 @@ export default class LifeEvent extends React.Component{
     }
 
     render(){
-        console.log(this.props)
         return(
             <Layout>
                 <PageHeader parent={this.props.meta.parent} title={this.props.title} intro={this.props.intro}/>

@@ -11,16 +11,28 @@ app
   .then(() => {
     const server = express()
 
-    // Intercept parent pages and their subpages
+    // Render service detail page
+    server.get('/service/:id', (req, res) => {
+      const actualPage = '/service'
+      const queryParams = { 
+        id: req.params.id
+      }
+      app.render(req, res, actualPage, queryParams)
+    })
+
+    // Render recommendations/services page
+    server.get('/services', (req, res) => {
+      return handle(req, res)
+    })
+
+    // Intercept parent pages _and_ their subpages
     server.get(['/:slug', '/:slug/:subpage*'], (req, res) => {
         const actualPage = '/page'
-
         const queryParams = { 
           slug: req.params.slug,
           subpage: req.params.subpage,
           path: req.path
         }
-        
         app.render(req, res, actualPage, queryParams)
     })
 

@@ -12,7 +12,7 @@ export default () =>
         </Link>
 
         <nav className="site-header__navigation">
-            <Link href="/services">
+            <Link href="/services" prefetch>
                 <a className="site-header__nav-link">Explore services</a>
             </Link>
             <Link href="#">
